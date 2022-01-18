@@ -11,7 +11,7 @@ const Aluno = connection.define("alunos", {
   nome: {
     type: Sequelize.STRING,
     allowNull: false,
-  },
+  }, 
 });
  
 module.exports = Aluno;

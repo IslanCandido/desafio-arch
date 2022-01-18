@@ -3,7 +3,7 @@ const connection = require("../config/database");
 const Aluno = require("./aluno-model");
 
 const Nota = connection.define("notas", {
-  id: {
+  id: { 
     type: Sequelize.INTEGER,
     autoIncrement: true,
     allowNull: true,
@@ -21,12 +21,11 @@ const Nota = connection.define("notas", {
   n4: {
     type: Sequelize.INTEGER,
   },
-  idAluno: {
-    type: Sequelize.INTEGER,
-    references: { model: "alunos", key: "id" },
-    onDelete: "CASCADE",
-    allowNull: false,
-  },
 });
+
+Nota.belongsTo(Aluno, {
+  constraint: true,
+  foreignKey: "idAluno"
+})
 
 module.exports = Nota;
