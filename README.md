@@ -1,8 +1,8 @@
 # arch-school
 
 ## Neste projeto foram criadas duas APIs.
-## Uma API de notas para os alunos consultarem as suas notas na base dados assim como se eles foram aprovados, reprovados ou ficaram de recuperação.
-## A outra API é de notas para os administradores, que engloba professores, coordenadores e etc. Ela serve para que os professores possam colocar a nota dos alunos no sistema, e para consultar a nota dos respectivos alunos 
+### Uma API de notas para os alunos consultarem as suas notas na base dados assim como se eles foram aprovados, reprovados ou ficaram de recuperação.
+### A outra API é de notas para os administradores, que engloba professores, coordenadores e etc. Ela serve para que os professores possam colocar a nota dos alunos no sistema, e para consultar a nota dos respectivos alunos 
 
 ### Pré-requisitos
 
@@ -29,7 +29,7 @@ $ npm install
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
 
-# O servidor inciará na porta:3000 - acesse <http://localhost:3000/api>
+# O servidor inciará na porta:3000 ou 4000 - acesse <http://localhost:3000/api> - <http://localhost:4000/api>
 
 ### 🛠 Tecnologias
 
